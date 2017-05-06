@@ -1,0 +1,23 @@
+{# The basic html template #}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pattern Library</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% block styles %}
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+  {% endblock %}
+</head>
+
+<body>
+  {% block body %}{% endblock %}
+  {% block scripts %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/watson-components.js"></script>
+    <script type="text/javascript" src="js/page.js"></script>
+  {% endblock %}
+</body>
+
+</html>

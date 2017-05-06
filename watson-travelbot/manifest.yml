@@ -1,0 +1,19 @@
+declared-services:
+  conversation-service:
+    label: conversation
+    plan: free
+  cloudantNoSQLDB-service:
+    label: cloudantNoSQLDB
+    plan: Lite
+  weatherinsights-service:
+    label: weatherinsights
+    plan: Free-v2
+applications:
+- services:
+   - conversation-service
+   - cloudantNoSQLDB-service
+   - weatherinsights-service
+  name: TravelBot-Catalan
+  command: npm start
+  path: .
+  memory: 512M

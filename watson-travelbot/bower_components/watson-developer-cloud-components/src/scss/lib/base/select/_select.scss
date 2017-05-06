@@ -1,0 +1,15 @@
+@import 'extends';
+
+.base--select {
+  @extend %base--select;
+
+  .firefox & {
+    background-image: none;
+    background-size: 0rem;
+  }
+  
+  .ie & {
+    background-image: none;
+    background-size: 0rem;
+  }
+}

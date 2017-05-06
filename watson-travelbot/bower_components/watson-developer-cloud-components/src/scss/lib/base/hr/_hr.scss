@@ -1,0 +1,13 @@
+@import 'mixins';
+@import 'extends';
+
+.base--hr {
+  @extend %base--hr;
+
+  &_small {
+    @include grid(3, $has-right-gutter: false);
+    @include reset-float();
+    margin-top: get('rhythm') * 1.5;
+    margin-bottom: get('rhythm') * 1.5;
+  }
+}
